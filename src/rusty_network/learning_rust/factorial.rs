@@ -1,6 +1,9 @@
-fn factorial(i: i32) -> i32 {
-    if i == 0 { 1 }
-    else { i * factorial(i - 1) }
+fn factorial(i: i32) -> Result<i32, String> {
+    if i < 0 { Err("Negative number".to_string()) }
+    else {
+        result: i32;
+        if i == 0 { result = 1 } else { i * factorial(i - 1) }
+    }
 }
 
 pub fn test_factorial() {
