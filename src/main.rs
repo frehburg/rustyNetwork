@@ -1,3 +1,7 @@
+#![allow(dead_code)]
+#![allow(unused_variables)]
+#![allow(unused_imports)]
+
 mod rusty_network;
 
 use rusty_network::learning_rust::person::Person;
