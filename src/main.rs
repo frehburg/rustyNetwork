@@ -1,8 +1,10 @@
 mod rusty_network;
 
 use rusty_network::learning_rust::person::Person;
+use rusty_network::learning_rust::even_or_odd;
 
 fn main() {
+    even_or_odd::test_even_or_odd();
 }
 
 fn test_person() {
