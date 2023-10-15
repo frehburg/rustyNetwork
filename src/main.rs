@@ -2,9 +2,10 @@ mod rusty_network;
 
 use rusty_network::learning_rust::person::Person;
 use rusty_network::learning_rust::even_or_odd;
+use rusty_network::learning_rust::factorial;
 
 fn main() {
-    even_or_odd::test_even_or_odd();
+    factorial::test_factorial();
 }
 
 fn test_person() {
