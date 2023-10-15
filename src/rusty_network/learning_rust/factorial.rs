@@ -1,18 +1,22 @@
-fn factorial(i: i32) -> Result<i32, String> {
-    if i < 0 { Err("Negative number".to_string()) }
-    else {
-        let result: i32;
-        if i == 0 {
-            result = 1;
-        } else {
-            result = i * factorial(i - 1);
-        }
-        Ok(result)
+fn factorial(i: i64) -> Result<i64, String>{
+    if i < 0 {
+        return Err("Factorial of negative number doesn't exist".to_string());
+    } else if i > 20 {
+        return Err("Factorial of number greater than 20 doesn't fit in i64".to_string());
     }
+
+    let result;
+    if i == 1 || i == 0 {
+        result = 1;
+    } else {
+        result = i * factorial(i - 1).unwrap();
+    }
+
+    Ok(result)
 }
 
 pub fn test_factorial() {
-    println!("Factorial of 5 is {} expected 120", factorial(5));
-    println!("Factorial of 10 is {} expected 3628800", factorial(10));
-    println!("Factorial of 15 is {} expected 1307674368000", factorial(15));
+    println!("Factorial of 5 is {:?} expected 120", factorial(5));
+    println!("Factorial of 10 is {:?} expected 3628800", factorial(10));
+    println!("Factorial of -1 is {:?} expected Err", factorial(-1));
 }
