@@ -19,4 +19,5 @@ pub fn test_factorial() {
     println!("Factorial of 5 is {:?} expected 120", factorial(5));
     println!("Factorial of 10 is {:?} expected 3628800", factorial(10));
     println!("Factorial of -1 is {:?} expected Err", factorial(-1));
+    println!("Factorial of 21 is {:?} expected Err", factorial(21));
 }
