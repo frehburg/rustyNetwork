@@ -9,7 +9,7 @@ use rusty_network::learning_rust::even_or_odd;
 use rusty_network::learning_rust::factorial;
 
 fn main() {
-    factorial::test_factorial();
+    factorial::try_factorial();
 }
 
 fn test_person() {
