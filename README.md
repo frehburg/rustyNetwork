@@ -1,4 +1,4 @@
-# rustyNetwork
+<div style="display: flex; align-items: center; justify-content: center; height: 200px;"><a href="https://github.com/frehburg/rusty_network" target="_blank" rel="noreferrer"> <img src="https://github.com/frehburg/rusty_network/blob/main/res/icon/icon.svg" alt="icon" width="100" height="100"/> </a> <h1>rustyNetwork </h1></div>
 
 I will be learning [Rust](https://www.rust-lang.org/) in this repository by creating a neural network
 
