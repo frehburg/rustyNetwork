@@ -1,3 +1,3 @@
 pub fn reverse_string() {
-    // TODO
+    // TODO: first write test case
 }
