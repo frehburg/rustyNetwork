@@ -1,6 +1,6 @@
 # rustyNetwork
 
-I will be learning [rust](https://www.rust-lang.org/) in this repository by creating a neural network
+I will be learning [Rust](https://www.rust-lang.org/) in this repository by creating a neural network
 
 ```
     _~^~^~_
