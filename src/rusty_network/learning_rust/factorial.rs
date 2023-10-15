@@ -1,4 +1,4 @@
-fn factorial(i: i64) -> Result<i64, String>{
+pub fn factorial(i: i64) -> Result<i64, String>{
     if i < 0 {
         return Err("Factorial of negative number doesn't exist".to_string());
     } else if i > 20 {
